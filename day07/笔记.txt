@@ -1,0 +1,28 @@
+
+地址;https://www.qcc.com/firm/5dffb644394922f9073544a08f38be9f.html
+分析  128位 密文
+    aad19edaf2555808ac2c: 0d69871b66bf1c368572f6cbe55e5b269592c2ea9a71f7303a21343946062345ab5905b1a59b8ae4a6e82515792e5d575616f61b5252208db85a145d6a981b47
+
+url 去掉域名进行加密  在APP里面经常这么干
+ 哈希不可逆？
+    后台怎么对比？
+        比较常用的做法： 后台拿参数加密 对比  密文
+
+t = 完整地址去掉域名 + 查询参数
+t = '/api/datalist/touzilist?keyNo=5dffb644394922f9073544a08f38be9f&pageIndex=1'
+key = (0,a.default)(t, e.data)
+key = (0, o.default)(t + n, (0,a.default)(t)).toLowerCase().substr(8, 20)
+
+o.default(t + n,a.default(t)).toLowerCase().substr(8, 20)
+
+t = 地址
+e.data = undefined
+s.default() = window.pid 写死
+value = =  r.default(t, e.data,  s.default())
+
+
+作业：
+地址：https://www.hh1024.com/#/login
+需求：做模拟登陆网站、拿到登陆返回的token值
+
+

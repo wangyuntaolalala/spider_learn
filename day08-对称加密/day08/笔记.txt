@@ -1,0 +1,30 @@
+
+
+DES
+    明文8字节 密文16位
+'密文是8的倍数、 明文越长密文也就越长'   16位增长
+'如果推断是对此加密 搜索啥？  encrypt(    decrypt('
+
+快乐学堂
+    看启动器
+    搜搜关键字  找api
+
+AES
+    明文16字节 密文32位
+    d.a =  CryptoJS
+
+总结：
+    对称加密特征
+        DES：明文8字节 密文16位
+        AES： 明文16字节 密文32位
+      搜索：encrypt加密  解密 decrypt
+
+
+3K采集数据的网站 采集人工智能相关所有数据
+
+
+作业：https://www.qizhidao.com/check?searchKey=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&tagNum=1&fromRoutePage=check
+解密这个数据  数据可以复制（手动复制密文进行解密 不用请求）
+
+
+

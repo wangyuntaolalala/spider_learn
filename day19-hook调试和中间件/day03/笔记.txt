@@ -1,0 +1,37 @@
+
+调试技巧
+    搜索
+      如果搜索不到  有可能关键参数是通过JS生成的
+        a = [a,n,a,l,y,s,i,s]
+        s = ''
+        for i in a:
+            s+i
+        s = analysis  动态拼接
+
+    "https://api.qimai.cn/rank/index?analysis=exs4CQYVHQNXAnkZBTYMWAA6IQsaS09ZcRRMFgBXXU4LDQAdAToWAAJVU1QAD1VaUFY4Wkk%3D&brand=grossing&device=iphone&country=cn&genre=36"
+
+    组装地址
+    url = https://api.qimai.cn/rank/index
+    JS 加密 xx参数 exs4CQYVHQNXAnkZBTYMWAA6IQsaS09ZcRRMFgBXXU4LDQAdAToWAAJVU1QAD1VaUFY4Wkk%3D
+    拼接地址 url + analysis + exs4CQYVHQNXAnkZBTYMWAA6IQsaS09ZcRRMFgBXXU4LDQAdAToWAAJVU1QAD1VaUFY4Wkk%3D
+    初始化  open (拼接地址)
+    send 发包
+
+    发包拦截  拦截器  中间件 作用请求和响应之间
+
+
+    .then  是axios接收后台返回数据的   vue  jquery
+    .success 这个也是的  接收后台返回数据   ajax
+
+
+    拦截器
+    interceptions.response.use   拦截响应 做修改
+    interceptions.request.use  拦截请求 做修改
+
+
+ JS发包  请求 拦截器  组装参数  初始化 发包  接收响应 响应拦截 JS渲染
+
+ JS下节课讲  现在是学会定位加密的位置
+
+多复习前几节课  重点掌握JS加载流程  关键信息 then success  interceptions  重点关注
+

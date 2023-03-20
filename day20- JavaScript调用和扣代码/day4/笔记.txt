@@ -1,0 +1,16 @@
+
+浏览器在设置cookie的时候会经过一个方法
+document.cookie =
+
+当cookie 被操作的时候  就是离cookie加密位置附近
+
+hook 监听对象里面属性的操作
+    def这个方法可以进行对应属性的读写，该方法可以对某个对象的某个属性进行定位，最后在其get\set中加入debugger即可，停住之后，找函数调用栈，分析栈即可发现目标值，定位的时候，对于func()往往有一个输出，
+    而func本身在控制台输出可以找到它对应的函数（相当于向上回溯了）
+    Object.defineProperty(obj, prop, descriptor)   （任何对象的都可以被监听）
+    obj:任意的obj
+    如果补显示行号 可以使用360极速
+
+
+怎么在A 文件 引入 B文件方法
+

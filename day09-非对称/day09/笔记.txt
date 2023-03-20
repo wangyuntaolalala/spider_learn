@@ -1,0 +1,29 @@
+
+使用场景
+    签名验证
+        一般是密码等参数 可能会有头部 表单
+     特征
+        base64格式  根据密钥长度来区分密文长度
+            一般比对此和哈希 密文长很多
+        setPublicKey  JSEncrypt
+
+
+微流云
+    登陆提交
+        https://api.wei-liu.com/api/v1/Token
+    获取公钥
+        https://api.wei-liu.com/api/v1/Token/code
+               返回 item1  item2
+pub = item1
+pubCode = item2
+
+var password = encrypt.encrypt(pubCode + sha512(password))
+
+作业
+地址：https://www.baidu.com/
+需求：破解百度登陆密码、算法必须是协议分析 不能使用第三方库
+交付：提供截图即可
+
+扩展：https://www.duitang.com/login/
+
+

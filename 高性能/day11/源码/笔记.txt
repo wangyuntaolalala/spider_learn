@@ -1,0 +1,30 @@
+
+
+1.获取资源地址
+
+
+
+2.发送请求  最耗时    requests   response
+流水线  进程   线程（员工 4  8）   10   拧螺丝  异步  协程
+
+
+
+3.提取数据
+4.保存数据
+
+
+
+
+requests 没有办法处理异步的操作
+学习 aiohttp   基于asyncio
+async   生成一个异步函数
+await   用来生明程序挂起
+
+
+图片地址
+    韩信
+    https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150-mobileskin-1.jpg
+    https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/150/150-bigskin-2.jpg
+    https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/150/150-bigskin-3.jpg
+    海月
+    https://game.gtimg.cn/images/yxzj/img201606/skin/hero-info/521/521-bigskin-2.jpg
